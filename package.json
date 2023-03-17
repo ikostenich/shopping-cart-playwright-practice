@@ -1,0 +1,28 @@
+{
+	"name": "shopping-cart-playwright",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+		"test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+		"test:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+		"test:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
+		"debug": "playwright test --config=playwright.config.ts --project=Chromium --headed --timeout=0"
+	},
+	"author": "Igor Kostenich",
+	"license": "ISC",
+	"dependencies": {
+		"@playwright/test": "^1.31.2",
+		"@types/node": "^18.15.3",
+		"playwright": "^1.31.2",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.5"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.55.0",
+		"@typescript-eslint/parser": "^5.55.0",
+		"eslint": "^8.36.0",
+		"prettier": "^2.8.4"
+	}
+}
